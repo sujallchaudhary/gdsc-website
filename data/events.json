@@ -1,0 +1,47 @@
+{
+  "events": [
+    {
+      "image": "/images/events/professional-business-conference.webp",
+      "time": "7:00 PM",
+      "date": "23 OCT",
+      "title": "Exploring New DSA Tricks :",
+      "description": "Key session by Piyush Singh",
+      "location": "Main Auditorium, NSUT",
+      "socialLinks": {
+        "instagram": "https://instagram.com",
+        "github": "https://github.com",
+        "linkedin": "https://linkedin.com",
+        "discord": "https://discord.com"
+      }
+    },
+    {
+      "image": "/next.svg",
+      "time": "6:00 PM",
+      "date": "25 OCT",
+      "title": "Web Development Workshop",
+      "description": "Learn modern web technologies",
+      "location": "Conference Hall, NSUT",
+      "socialLinks": {
+        "instagram": "https://instagram.com",
+        "github": "https://github.com",
+        "linkedin": "https://linkedin.com",
+        "discord": "https://discord.com"
+      }
+    },
+    {
+      "image": "/next.svg",
+      "time": "5:00 PM",
+      "date": "28 OCT",
+      "title": "AI & Machine Learning Seminar",
+      "description": "Introduction to AI concepts",
+      "location": "Online",
+      "socialLinks": {
+        "instagram": "https://instagram.com",
+        "github": "https://github.com",
+        "linkedin": "https://linkedin.com",
+        "discord": "https://discord.com"
+      }
+    }
+  ]
+}
+

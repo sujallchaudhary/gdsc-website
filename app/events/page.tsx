@@ -1,38 +1,10 @@
 import { EventCard, FilterBar, PageHero } from '@/app/components/events';
+import eventsData from '@/data/events.json';
 
 export default function EventsPage() {
   // Sample event data - replace with actual data fetching later
-  const sampleEvents = [
-    {
-      image: '/images/events/professional-business-conference.webp',
-       // Replace with actual event images
-      time: '7:00 PM',
-      date: '23 OCT',
-      title: 'Exploring New DSA Tricks :',
-      description: 'Description of event 1',
-      location: 'Main Auditorium, NSUT',
-      socialLinks: {
-        instagram: 'https://instagram.com',
-        github: 'https://github.com',
-        linkedin: 'https://linkedin.com',
-        discord: 'https://discord.com'
-      }
-    },
-    {
-      image: '/next.svg', // Replace with actual event images
-      time: '7:00 PM',
-      date: '23 OCT',
-      title: 'Exploring New DSA Tricks :',
-      description: 'Description of event 2',
-      location: 'Main Auditorium, NSUT',
-      socialLinks: {
-        instagram: 'https://instagram.com',
-        github: 'https://github.com',
-        linkedin: 'https://linkedin.com',
-        discord: 'https://discord.com'
-      }
-    }
-  ];
+  const events = eventsData.events;
+
 
   return (
     <div className="min-h-screen bg-[var(--color-background-light-gray)]">
@@ -60,7 +32,7 @@ export default function EventsPage() {
 
         {/* Event Cards */}
         <div className="flex flex-col gap-6">
-          {sampleEvents.map((event, index) => (
+          {events.map((event, index) => (
             <EventCard
               key={index}
               image={event.image}
