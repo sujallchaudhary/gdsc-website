@@ -1,0 +1,80 @@
+{
+  "events": [
+    {
+      "image": "/images/events/professional-business-conference.webp",
+      "time": "7:00 PM",
+      "date": "23 OCT",
+      "title": "Exploring New DSA Tricks :",
+      "description": "Key session by Piyush Singh",
+      "location": "Main Auditorium",
+      "eventType": "Workshop",
+      "socialLinks": {
+        "instagram": "https://instagram.com",
+        "github": "https://github.com",
+        "linkedin": "https://linkedin.com",
+        "discord": "https://discord.com"
+      }
+    },
+    {
+      "image": "/next.svg",
+      "time": "6:00 PM",
+      "date": "25 OCT",
+      "title": "Web Development Workshop",
+      "description": "Learn modern web technologies",
+      "location": "Conference Hall",
+      "eventType": "Workshop",
+      "socialLinks": {
+        "instagram": "https://instagram.com",
+        "github": "https://github.com",
+        "linkedin": "https://linkedin.com",
+        "discord": "https://discord.com"
+      }
+    },
+    {
+      "image": "/next.svg",
+      "time": "5:00 PM",
+      "date": "28 OCT",
+      "title": "AI & Machine Learning Seminar",
+      "description": "Introduction to AI concepts",
+      "location": "Online",
+      "eventType": "Seminar",
+      "socialLinks": {
+        "instagram": "https://instagram.com",
+        "github": "https://github.com",
+        "linkedin": "https://linkedin.com",
+        "discord": "https://discord.com"
+      }
+    },
+    {
+      "image": "/next.svg",
+      "time": "10:00 AM",
+      "date": "30 OCT",
+      "title": "Code Sprint Hackathon",
+      "description": "24-hour coding challenge",
+      "location": "Main Auditorium",
+      "eventType": "Hackathon",
+      "socialLinks": {
+        "instagram": "https://instagram.com",
+        "github": "https://github.com",
+        "linkedin": "https://linkedin.com",
+        "discord": "https://discord.com"
+      }
+    },
+    {
+      "image": "/next.svg",
+      "time": "4:00 PM",
+      "date": "02 NOV",
+      "title": "GDG Community Meetup",
+      "description": "Connect with fellow developers",
+      "location": "Conference Hall",
+      "eventType": "Meetup",
+      "socialLinks": {
+        "instagram": "https://instagram.com",
+        "github": "https://github.com",
+        "linkedin": "https://linkedin.com",
+        "discord": "https://discord.com"
+      }
+    }
+  ]
+}
+
