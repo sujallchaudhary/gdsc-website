@@ -1,6 +1,6 @@
-'use client';
+"use client";
 
-import { ChevronDownIcon } from '@/app/components/icons';
+import { ChevronDownIcon } from "@/components/icons";
 
 interface FilterDropdownProps {
   label: string;
@@ -17,23 +17,20 @@ export default function FilterDropdown({
   colorbg,
   colortext,
   value,
-  onChange
+  onChange,
 }: FilterDropdownProps) {
-
   return (
     <div className="relative flex items-center">
       <select
-        value={value || ''}
+        value={value || ""}
         onChange={(e) => onChange?.(e.target.value)}
         className="w-full appearance-none rounded-full font-medium border-0 px-4 py-2.5 pr-10 text-sm focus:outline-none focus:ring-2 focus:ring-opacity-30"
-        style={{ 
-          backgroundColor: colorbg, 
+        style={{
+          backgroundColor: colorbg,
           color: colortext,
         }}
       >
-        <option value="">
-          {label}
-        </option>
+        <option value="">{label}</option>
         {options.map((option) => (
           <option key={option} value={option}>
             {option}
@@ -41,10 +38,7 @@ export default function FilterDropdown({
         ))}
       </select>
       <div className="pointer-events-none absolute right-3 flex items-center">
-        <ChevronDownIcon
-          className="h-5 w-5"
-          style={{ color: colortext }}
-        />
+        <ChevronDownIcon className="h-5 w-5" style={{ color: colortext }} />
       </div>
     </div>
   );

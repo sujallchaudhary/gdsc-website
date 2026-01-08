@@ -1,6 +1,6 @@
-'use client';
+"use client";
 
-import { SearchIcon } from '@/app/components/icons';
+import { SearchIcon } from "@/components/icons";
 
 interface SearchInputProps {
   placeholder?: string;
@@ -11,11 +11,11 @@ interface SearchInputProps {
 export default function SearchInput({
   placeholder = "Search",
   value,
-  onChange
+  onChange,
 }: SearchInputProps) {
   const colors = {
-    bg: 'var(--color-light-red)',
-    text: 'var(--color-dark-red)',
+    bg: "var(--color-light-red)",
+    text: "var(--color-dark-red)",
   };
 
   return (
@@ -32,16 +32,13 @@ export default function SearchInput({
         value={value}
         onChange={(e) => onChange?.(e.target.value)}
         className="search-input-placeholder w-full rounded-full border-0 font-medium px-4 py-2.5 pr-10 text-sm focus:outline-none focus:ring-2 focus:ring-opacity-100"
-        style={{ 
-          backgroundColor: colors.bg, 
+        style={{
+          backgroundColor: colors.bg,
           color: colors.text,
         }}
       />
       <div className="absolute right-3 flex items-center">
-        <SearchIcon
-          className="h-5 w-5"
-          style={{ color: colors.text }}
-        />
+        <SearchIcon className="h-5 w-5" style={{ color: colors.text }} />
       </div>
     </div>
   );

@@ -3,7 +3,7 @@ import { Fragment_Mono } from "next/font/google";
 import "./globals.css";
 import localFont from "next/font/local";
 import NavbarManager from "@/components/NavbarManager";
-import Footer from "./components/footer";
+import Footer from "@/components/footer";
 
 const neueMontreal = localFont({
   variable: "--font-neue-montreal",
@@ -24,8 +24,8 @@ const neueMontreal = localFont({
       weight: "700",
       style: "normal",
     },
-  ]
-})
+  ],
+});
 
 const productSans = localFont({
   variable: "--font-product-sans",
@@ -46,8 +46,8 @@ const productSans = localFont({
       weight: "700",
       style: "normal",
     },
-  ]
-})
+  ],
+});
 
 const fragmentMono = Fragment_Mono({
   variable: "--font-fragment-mono",
@@ -55,10 +55,10 @@ const fragmentMono = Fragment_Mono({
   subsets: ["latin"],
 });
 
-
 export const metadata: Metadata = {
   title: "GDG - NSUT",
-  description: "Google Developer Group at Netaji Subhas University of Technology",
+  description:
+    "Google Developer Group at Netaji Subhas University of Technology",
 };
 
 export default function RootLayout({

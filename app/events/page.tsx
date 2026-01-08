@@ -1,14 +1,14 @@
-'use client';
+"use client";
 
-import { useState, useMemo } from 'react';
-import { EventCard, FilterBar, PageHero } from '@/app/components/events';
-import eventsData from '@/data/events.json';
+import { useState, useMemo } from "react";
+import { EventCard, FilterBar, PageHero } from "@/components/events";
+import eventsData from "@/data/events.json";
 
 export default function EventsPage() {
   // Filter state
-  const [searchQuery, setSearchQuery] = useState('');
-  const [locationFilter, setLocationFilter] = useState('');
-  const [eventTypeFilter, setEventTypeFilter] = useState('');
+  const [searchQuery, setSearchQuery] = useState("");
+  const [locationFilter, setLocationFilter] = useState("");
+  const [eventTypeFilter, setEventTypeFilter] = useState("");
 
   // Get all events from JSON
   const allEvents = eventsData.events;
@@ -18,26 +18,27 @@ export default function EventsPage() {
     return allEvents.filter((event) => {
       // Search filter - matches title, description, or location
       const searchLower = searchQuery.toLowerCase();
-      const matchesSearch = searchQuery === '' || 
+      const matchesSearch =
+        searchQuery === "" ||
         event.title.toLowerCase().includes(searchLower) ||
         event.description.toLowerCase().includes(searchLower) ||
         event.location.toLowerCase().includes(searchLower);
 
       // Location filter
-      const matchesLocation = locationFilter === '' || 
-        event.location === locationFilter;
+      const matchesLocation =
+        locationFilter === "" || event.location === locationFilter;
 
       // Event type filter
-      const matchesEventType = eventTypeFilter === '' || 
-        event.eventType === eventTypeFilter;
+      const matchesEventType =
+        eventTypeFilter === "" || event.eventType === eventTypeFilter;
 
       return matchesSearch && matchesLocation && matchesEventType;
     });
   }, [allEvents, searchQuery, locationFilter, eventTypeFilter]);
 
   // Get unique locations and event types for dropdown options
-  const locationOptions = [...new Set(allEvents.map(e => e.location))];
-  const eventTypeOptions = [...new Set(allEvents.map(e => e.eventType))];
+  const locationOptions = [...new Set(allEvents.map((e) => e.location))];
+  const eventTypeOptions = [...new Set(allEvents.map((e) => e.eventType))];
 
   return (
     <div className="min-h-screen bg-[var(--color-background-light-gray)]">
@@ -96,4 +97,3 @@ export default function EventsPage() {
     </div>
   );
 }
-

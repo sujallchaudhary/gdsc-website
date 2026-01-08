@@ -1,14 +1,11 @@
 "use client";
 
+import HomeCards from "@/components/home/HomeCards";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
-const heroImages = [
-  "/hero-1.svg",
-  "/hero-2.svg",
-  "/hero-3.svg",
-];
+const heroImages = ["/hero-1.svg", "/hero-2.svg", "/hero-3.svg"];
 
 export default function HomePage() {
   const [currentImage, setCurrentImage] = useState(0);
@@ -62,7 +59,6 @@ export default function HomePage() {
       {/* Content */}
       <section className="relative min-h-screen flex items-center px-6 md:px-16">
         <div className="max-w-7xl w-full mx-auto flex flex-col lg:flex-row lg:items-end lg:justify-between gap-12 text-white">
-
           {/* LEFT */}
           <div className="max-w-xl">
             {/* Logo */}
@@ -87,7 +83,6 @@ export default function HomePage() {
 
             {/* CTA ROW */}
             <div className="flex items-center gap-4 mb-6">
-
               {/* Let’s Connect → Contact Page */}
               <Link href="/contact">
                 <button
@@ -109,9 +104,7 @@ export default function HomePage() {
               {/* Play Button → Instant Image Change */}
               <button
                 onClick={() =>
-                  triggerImageChange(
-                    (currentImage + 1) % heroImages.length
-                  )
+                  triggerImageChange((currentImage + 1) % heroImages.length)
                 }
                 className="
                   flex items-center justify-center
@@ -135,12 +128,15 @@ export default function HomePage() {
 
             {/* Description */}
             <p className="text-sm sm:text-base md:text-lg leading-relaxed max-w-md opacity-95">
-              At GDG NSUT, we aim to learn, teach and grow together.
-              A place where creative minds build impactful technology.
+              At GDG NSUT, we aim to learn, teach and grow together. A place
+              where creative minds build impactful technology.
             </p>
           </div>
         </div>
       </section>
+
+      {/* second section in the home page */}
+      <HomeCards />
     </main>
   );
 }

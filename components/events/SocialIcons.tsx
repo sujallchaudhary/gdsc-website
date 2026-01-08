@@ -2,15 +2,15 @@ import {
   InstagramIcon,
   GitHubIcon,
   LinkedInIcon,
-  DiscordIcon
-} from '@/app/components/icons';
+  DiscordIcon,
+} from "@/components/icons";
 
 interface SocialIconsProps {
   instagram?: string;
   github?: string;
   linkedin?: string;
   discord?: string;
-  size?: 'sm' | 'md' | 'lg';
+  size?: "sm" | "md" | "lg";
 }
 
 export default function SocialIcons({
@@ -18,12 +18,12 @@ export default function SocialIcons({
   github,
   linkedin,
   discord,
-  size = 'md'
+  size = "md",
 }: SocialIconsProps) {
   const sizeClasses = {
-    sm: 'w-7 h-7',
-    md: 'w-9 h-9',
-    lg: 'w-11 h-11'
+    sm: "w-7 h-7",
+    md: "w-9 h-9",
+    lg: "w-11 h-11",
   };
 
   const iconSize = sizeClasses[size];
@@ -40,7 +40,7 @@ export default function SocialIcons({
         >
           <InstagramIcon
             className="w-full h-full"
-            style={{ color: 'var(--color-primary-yellow)' }}
+            style={{ color: "var(--color-primary-yellow)" }}
           />
         </a>
       )}
@@ -54,7 +54,7 @@ export default function SocialIcons({
         >
           <GitHubIcon
             className="w-full h-full"
-            style={{ color: 'var(--color-primary-green)' }}
+            style={{ color: "var(--color-primary-green)" }}
           />
         </a>
       )}
@@ -68,7 +68,7 @@ export default function SocialIcons({
         >
           <LinkedInIcon
             className="w-full h-full"
-            style={{ color: 'var(--color-primary-blue)' }}
+            style={{ color: "var(--color-primary-blue)" }}
           />
         </a>
       )}
@@ -82,7 +82,7 @@ export default function SocialIcons({
         >
           <DiscordIcon
             className="w-full h-full"
-            style={{ color: 'var(--color-primary-red)' }}
+            style={{ color: "var(--color-primary-red)" }}
           />
         </a>
       )}
