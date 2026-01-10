@@ -49,7 +49,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #F2F2F2;
+    --background: #ffffff;
     --foreground: #ededed;
   }
 }
@@ -58,4 +58,12 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-product-sans);
+}
+
+@keyframes hover-loop {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.animate-hover-loop {
+  animation: hover-loop 3s linear infinite;
 }

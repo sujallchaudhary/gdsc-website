@@ -1,4 +1,5 @@
 import { Linkedin } from 'lucide-react';
+import Image from 'next/image';
 
 interface TeamCardProps {
   name: string;
@@ -24,11 +25,12 @@ export default function Card({ name, imageSrc, linkedinUrl, tintColor }: TeamCar
         </div>
 
         {/* Profile Image */}
-        <div className="absolute inset-[6px] rounded-full overflow-hidden bg-white z-20">
-          <img 
-            src={imageSrc} 
+        <div className="absolute inset-1.5 rounded-full overflow-hidden bg-white z-10">
+          <Image 
+            src={imageSrc}
             alt={name} 
-            className="w-full h-full object-cover transition-all duration-500 group-hover:scale-110"
+            fill
+            className="object-cover transition-all duration-500 group-hover:scale-110"
           />
           <div 
             className="absolute inset-0 opacity-20 group-hover:opacity-0 transition-opacity duration-500"
@@ -41,14 +43,14 @@ export default function Card({ name, imageSrc, linkedinUrl, tintColor }: TeamCar
           href={linkedinUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="absolute bottom-2 right-2 bg-[#FBBC04] p-1 md:p-4 rounded-full border-2 border-white shadow-lg z-30 scale-0 group-hover:scale-100 transition-transform duration-300 hover:bg-[#f4b400]"
+          className="absolute bottom-2 right-2 bg-primary-yellow p-1 md:p-4 rounded-full border-2 border-white shadow-lg z-30 scale-0 group-hover:scale-100 transition-transform duration-300 hover:bg-[#f4b400]"
         >
           <Linkedin size={20} fill="black" strokeWidth={0} />
         </a>
       </div>
 
-      <div className="text-center">
-        <h3 className="text-[#3C4043] font-bold text-lg sm:text-xl md:text-2xl lg:text-3xl">{name}</h3>
+      <div className="text-center z-10">
+        <h3 className="text-[#3C4043] font-bold text-lg sm:text-xl md:text-2xl lg:text-3xl hover:text-red-500">{name}</h3>
       </div>
     </div>
   );

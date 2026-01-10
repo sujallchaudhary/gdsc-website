@@ -1,0 +1,68 @@
+.navbar {
+  /* Light mode styles (default) */
+  --nav-bg: rgb(227 227 227 / 0.5);
+  --nav-border: rgb(255 255 255 / 0.2);
+  --text-color: rgb(23 23 23);
+  --text-hover: rgb(37 99 235);
+  --mobile-bg: rgb(227 227 227 / 0.5);
+  --mobile-menu-bg: rgb(227 227 227 / 0.6);
+  --mobile-hover: rgb(0 0 0 / 0.05);
+  --overlay-bg: rgb(0 0 0 / 0.2);
+  --sub-text: rgb(82 82 82);
+}
+
+.navbar.dark {
+  /* Dark mode styles */
+  --nav-bg: rgb(0 0 0 / 0.4);
+  --nav-border: rgb(255 255 255 / 0.5);
+  --text-color: rgb(255 255 255);
+  --text-hover: rgb(147 197 253);
+  --mobile-bg: rgb(0 0 0 / 0.4);
+  --mobile-menu-bg: rgb(0 0 0 / 0.4);
+  --mobile-hover: rgb(255 255 255 / 0.1);
+  --overlay-bg: rgb(0 0 0 / 0.6);
+  --sub-text: rgb(229 229 229);
+}
+
+.navBg {
+  background-color: var(--nav-bg);
+  border-color: var(--nav-border);
+}
+
+.textColor {
+  color: var(--text-color);
+}
+
+.textHover {
+  transition: color 0.2s;
+}
+
+.textHover:hover {
+  color: var(--text-hover);
+}
+
+.mobileBg {
+  background-color: var(--mobile-bg);
+  border-color: var(--nav-border);
+}
+
+.mobileMenuBg {
+  background-color: var(--mobile-menu-bg);
+  border-color: var(--nav-border);
+}
+
+.mobileHover {
+  transition: background-color 0.2s;
+}
+
+.mobileHover:hover {
+  background-color: var(--mobile-hover);
+}
+
+.overlayBg {
+  background-color: var(--overlay-bg);
+}
+
+.subText {
+  color: var(--sub-text);
+}

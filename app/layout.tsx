@@ -2,8 +2,9 @@ import type { Metadata } from "next";
 import { Fragment_Mono } from "next/font/google";
 import "./globals.css";
 import localFont from "next/font/local";
-import NavbarManager from "@/components/NavbarManager";
+import UnifiedNavbar from "@/components/UnifiedNavbar";
 import Footer from "@/components/footer";
+import { cn } from "@/libs/utils";
 
 const neueMontreal = localFont({
   variable: "--font-neue-montreal",
@@ -69,9 +70,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${fragmentMono.variable} ${neueMontreal.variable} ${productSans.variable} antialiased`}
+        className={cn(
+          fragmentMono.variable,
+          neueMontreal.variable,
+          productSans.variable,
+          "antialiased"
+        )}
       >
-        <NavbarManager />
+        <UnifiedNavbar />
+        {/* <NavbarManager /> */}
         {children}
         <Footer />
       </body>

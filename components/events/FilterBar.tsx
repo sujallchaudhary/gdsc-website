@@ -26,14 +26,16 @@ export default function FilterBar({
 }: FilterBarProps) {
   return (
     <div className="flex flex-col gap-4 sm:flex-row sm:gap-6">
-      <div className="flex-1">
+      <div className="flex-1 max-w-62.5">
         <SearchInput
           placeholder="Search"
           value={searchValue}
           onChange={onSearchChange}
+          iconClassName='text-dark-red'
+          inputClassName='bg-light-red text-dark-red placeholder:text-dark-red'
         />
       </div>
-      <div className="flex-1">
+      <div className="flex-1 max-w-62.5">
         <FilterDropdown
           label="Location"
           options={locationOptions}
@@ -43,7 +45,7 @@ export default function FilterBar({
           colortext="var(--color-dark-blue)"
         />
       </div>
-      <div className="flex-1">
+      <div className="flex-1 max-w-62.5">
         <FilterDropdown
           label="Event Types"
           options={eventTypeOptions}

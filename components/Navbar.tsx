@@ -44,7 +44,7 @@ const Navbar = () => {
                         }}
                     >
                         <Image
-                            src="/logo.svg"
+                            src={`/logo.svg`}
                             alt="GDG Logo"
                             fill
                             className="object-contain"
@@ -77,8 +77,8 @@ const Navbar = () => {
                     className="flex items-center gap-8 text-xl text-white whitespace-nowrap shrink-0 pl-4"
                 >
                     <Link href="/events" className="hover:text-blue-300 transition-colors">Events</Link>
-                    <Link href="/feed" className="hover:text-blue-300 transition-colors">Feed</Link>
-                    <Link href="/about" className="hover:text-blue-300 transition-colors">About Team</Link>
+                    <Link href="/feeds" className="hover:text-blue-300 transition-colors">Feed</Link>
+                    <Link href="/team" className="hover:text-blue-300 transition-colors">About Team</Link>
                     <Link href="/contact" className="hover:text-blue-300 transition-colors">Contact Us</Link>
                 </motion.div>
             </motion.nav>
@@ -102,8 +102,8 @@ const Navbar = () => {
                         className="w-48 flex flex-col gap-2 rounded-2xl border border-white/10 bg-black/40 backdrop-blur-md p-4 shadow-2xl"
                     >
                         <Link href="/events" className="block rounded-lg px-4 py-2 text-white hover:bg-white/10">Events</Link>
-                        <Link href="/feed" className="block rounded-lg px-4 py-2 text-white hover:bg-white/10">Feed</Link>
-                        <Link href="/about" className="block rounded-lg px-4 py-2 text-white hover:bg-white/10">About Team</Link>
+                        <Link href="/feeds" className="block rounded-lg px-4 py-2 text-white hover:bg-white/10">Feed</Link>
+                        <Link href="/team" className="block rounded-lg px-4 py-2 text-white hover:bg-white/10">About Team</Link>
                         <Link href="/contact" className="block rounded-lg px-4 py-2 text-white hover:bg-white/10">Contact Us</Link>
                     </div>
                 </div>

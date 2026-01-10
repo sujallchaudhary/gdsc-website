@@ -4,6 +4,7 @@ import {
   LinkedInIcon,
   DiscordIcon,
 } from "@/components/icons";
+import { cn } from "@/libs/utils";
 
 interface SocialIconsProps {
   instagram?: string;
@@ -35,7 +36,10 @@ export default function SocialIcons({
           href={instagram}
           target="_blank"
           rel="noopener noreferrer"
-          className={`${iconSize} flex items-center justify-center transition-opacity hover:opacity-80`}
+          className={cn(
+            iconSize,
+            "flex items-center justify-center transition-opacity hover:opacity-80"
+          )}
           aria-label="Instagram"
         >
           <InstagramIcon
@@ -49,7 +53,10 @@ export default function SocialIcons({
           href={github}
           target="_blank"
           rel="noopener noreferrer"
-          className={`${iconSize} flex items-center justify-center transition-opacity hover:opacity-80`}
+          className={cn(
+            iconSize,
+            "flex items-center justify-center transition-opacity hover:opacity-80"
+          )}
           aria-label="GitHub"
         >
           <GitHubIcon
@@ -63,7 +70,10 @@ export default function SocialIcons({
           href={linkedin}
           target="_blank"
           rel="noopener noreferrer"
-          className={`${iconSize} flex items-center justify-center transition-opacity hover:opacity-80`}
+          className={cn(
+            iconSize,
+            "flex items-center justify-center transition-opacity hover:opacity-80"
+          )}
           aria-label="LinkedIn"
         >
           <LinkedInIcon
@@ -77,7 +87,10 @@ export default function SocialIcons({
           href={discord}
           target="_blank"
           rel="noopener noreferrer"
-          className={`${iconSize} flex items-center justify-center transition-opacity hover:opacity-80`}
+          className={cn(
+            iconSize,
+            "flex items-center justify-center transition-opacity hover:opacity-80"
+          )}
           aria-label="Discord"
         >
           <DiscordIcon

@@ -1,7 +1,7 @@
 {
   "events": [
     {
-      "image": "/images/events/professional-business-conference.webp",
+      "image": "/events/event-1.webp",
       "time": "7:00 PM",
       "date": "23 OCT",
       "title": "Exploring New DSA Tricks :",
@@ -16,7 +16,7 @@
       }
     },
     {
-      "image": "/next.svg",
+      "image": "/events/event-1.webp",
       "time": "6:00 PM",
       "date": "25 OCT",
       "title": "Web Development Workshop",
@@ -31,7 +31,7 @@
       }
     },
     {
-      "image": "/next.svg",
+      "image": "/events/event-1.webp",
       "time": "5:00 PM",
       "date": "28 OCT",
       "title": "AI & Machine Learning Seminar",
@@ -46,7 +46,7 @@
       }
     },
     {
-      "image": "/next.svg",
+      "image": "/events/event-1.webp",
       "time": "10:00 AM",
       "date": "30 OCT",
       "title": "Code Sprint Hackathon",
@@ -61,7 +61,7 @@
       }
     },
     {
-      "image": "/next.svg",
+      "image": "/events/event-1.webp",
       "time": "4:00 PM",
       "date": "02 NOV",
       "title": "GDG Community Meetup",

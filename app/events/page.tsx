@@ -41,14 +41,17 @@ export default function EventsPage() {
   const eventTypeOptions = [...new Set(allEvents.map((e) => e.eventType))];
 
   return (
-    <div className="min-h-screen bg-[var(--color-background-light-gray)]">
+    <div className="min-h-screen bg-white">
       {/* Main Content Area */}
-      <main className="mx-auto max-w-6xl bg-[var(--color-background-light-gray)] px-6 py-12 sm:px-8 lg:px-12">
+      <main className="mx-auto max-w-7xl bg-white px-6 pb-12 pt-6 md:py-12 sm:px-8 lg:px-12">
         {/* Hero Section */}
-        <PageHero />
+        <PageHero
+          title="Events and Workshops"
+          iconClassName="text-primary-yellow"
+         />
 
         {/* Filter Section */}
-        <div className="mb-10">
+        <div className="mb-10 md:mt-0 mt-5">
           <FilterBar
             searchValue={searchQuery}
             onSearchChange={setSearchQuery}
@@ -64,11 +67,11 @@ export default function EventsPage() {
         {/* Upcoming Events Section */}
         <div className="mb-8">
           <div className="inline-block group cursor-pointer">
-            <h2 className="text-3xl font-medium text-[var(--color-text-black)] md:text-4xl">
+            <h2 className="text-3xl font-medium text-text-black md:text-4xl">
               Upcoming Events
             </h2>
             {/* Underline separator - visible on mobile (no animation), animates on desktop hover */}
-            <div className="mt-2 h-0.5 w-full bg-[var(--color-text-black)] origin-left scale-x-100 md:scale-x-0 md:group-hover:scale-x-100 md:transition-transform md:duration-500 md:ease-out" />
+            <div className="mt-2 h-0.5 w-full bg-text-black origin-left scale-x-100 md:scale-x-0 md:group-hover:scale-x-100 md:transition-transform md:duration-500 md:ease-out" />
           </div>
         </div>
 
@@ -88,7 +91,7 @@ export default function EventsPage() {
               />
             ))
           ) : (
-            <div className="py-12 text-center text-lg text-[var(--color-text-gray)]">
+            <div className="py-12 text-center text-lg text-text-gray">
               No events found matching your criteria.
             </div>
           )}
