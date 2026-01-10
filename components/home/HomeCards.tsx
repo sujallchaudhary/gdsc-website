@@ -64,7 +64,7 @@ const HomeCards = () => {
               className={cn(
                 "shadow-[0px_4px_30px_5px_#0000004D] z-3 ml-7 lg:ml-20 rounded-[25px] lg:rounded-[40px]",
                 "relative flex justify-center items-center lg:block min-h-60 lg:h-[60vh] w-[80vw] lg:w-[60vw] mx-auto",
-                "bg-[url('/home/home-21.png')] bg-cover bg-center overflow-hidden"
+                "bg-[url('/home/design.jpg')] bg-cover bg-center overflow-hidden"
               )}
             >
               <div className="absolute inset-0 bg-linear-to-r from-black/90 via-black/40 to-black/0" />
@@ -133,7 +133,7 @@ const HomeCards = () => {
               className={cn(
                 "text-right shadow-[0px_4px_30px_5px_#0000004D] z-4 rounded-[25px] lg:rounded-[40px]",
                 "relative flex justify-center items-center lg:block min-h-60 lg:h-[60vh] mr-7 w-[80vw] lg:w-[60vw] lg:mr-20",
-                "bg-[url('/home/home-21.png')] bg-cover bg-center overflow-hidden"
+                "bg-[url('/home/code.jpg')] bg-cover bg-center overflow-hidden"
               )}
             >
               <div className="absolute inset-0 bg-linear-to-l from-black/90 via-black/40 to-black/0" />
@@ -201,7 +201,7 @@ const HomeCards = () => {
               className={cn(
                 "shadow-[0px_4px_30px_5px_#0000004D] z-4 ml-7 lg:ml-20 rounded-[25px] lg:rounded-[40px]",
                 "relative flex justify-center items-center lg:block min-h-60 lg:h-[60vh] w-[80vw] lg:w-[60vw] mx-auto",
-                "bg-[url('/home/home-21.png')] bg-cover bg-center overflow-hidden"
+                "bg-[url('/home/develop.jpg')] bg-cover bg-center overflow-hidden"
               )}
             >
               <div className="absolute inset-0 bg-linear-to-r from-black/90 via-black/40 to-black/0" />
