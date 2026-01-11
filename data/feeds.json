@@ -1,0 +1,46 @@
+{
+    "feeds": [
+        {
+            "id": 1,
+            "link": "https://www.instagram.com/p/DSP0eG5iRnu/",
+            "image": "/feeds/big-reveal.png",
+            "alt": "Big Reveal",
+            "category": "Announcements"
+        },
+        {
+            "id": 2,
+            "link": "https://www.instagram.com/p/DQ_ZSpjCQh4/",
+            "image": "/feeds/stay-tune-gdg.png",
+            "alt": "Stay Tuned",
+            "category": "Announcements"
+        },
+        {
+            "id": 3,
+            "link": "https://www.instagram.com/p/DQLn1vWicEt/?img_index=1",
+            "image": "/feeds/results2025.png",
+            "alt": "Results 2025",
+            "category": "Announcements"
+        },
+        {
+            "id": 4,
+            "link": "https://www.instagram.com/p/DP_NDurCWTg/?img_index=1",
+            "image": "/feeds/mentorPostDevML.png",
+            "alt": "Mentor Post - Dev & ML",
+            "category": "Mentorship"
+        },
+        {
+            "id": 5,
+            "link": "https://www.instagram.com/p/DP_NSApCVnt/?img_index=1",
+            "image": "/feeds/mentorPostDSAProd.png",
+            "alt": "Mentor Post - DSA & Prod",
+            "category": "Mentorship"
+        },
+        {
+            "id": 6,
+            "link": "https://www.instagram.com/p/DP_NdbMiRPF/?img_index=1",
+            "image": "/feeds/mentorPostOps.png",
+            "alt": "Mentor Post - Ops",
+            "category": "Mentorship"
+        }
+    ]
+}
