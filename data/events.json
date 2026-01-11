@@ -1,80 +1,109 @@
 {
   "events": [
     {
-      "image": "/events/event-1.webp",
-      "time": "7:00 PM",
-      "date": "23 OCT",
-      "title": "Exploring New DSA Tricks :",
-      "description": "Key session by Piyush Singh",
+      "image": "/events/shunya.png",
+      "time": "4:00 PM",
+      "date": "12 SEP",
+      "title": "Shunya 2025",
+      "description": "GDG NSUT's flagship event.",
       "location": "Main Auditorium",
-      "eventType": "Workshop",
+      "eventType": "Event",
       "socialLinks": {
-        "instagram": "https://instagram.com",
-        "github": "https://github.com",
-        "linkedin": "https://linkedin.com",
-        "discord": "https://discord.com"
+        "instagram": "https://instagram.com/gdgnsut",
+        "github": "https://github.com/GDSC-NSUT",
+        "linkedin": "https://www.linkedin.com/company/gdgnsut/",
+        "discord": "https://discord.gg/WtqbaUzgR"
       }
     },
     {
-      "image": "/events/event-1.webp",
-      "time": "6:00 PM",
-      "date": "25 OCT",
-      "title": "Web Development Workshop",
-      "description": "Learn modern web technologies",
-      "location": "Conference Hall",
-      "eventType": "Workshop",
+      "image": "/events/oneLineOneShot.png",
+      "time": "12:00 PM",
+      "date": "4 NOV",
+      "title": "One Line One Shot",
+      "description": "Step into the future of ideas.",
+      "location": "APJ 8&9",
+      "eventType": "Event",
       "socialLinks": {
-        "instagram": "https://instagram.com",
-        "github": "https://github.com",
-        "linkedin": "https://linkedin.com",
-        "discord": "https://discord.com"
+        "instagram": "https://instagram.com/gdgnsut",
+        "github": "https://github.com/GDSC-NSUT",
+        "linkedin": "https://www.linkedin.com/company/gdgnsut/",
+        "discord": "https://discord.gg/WtqbaUzgR"
       }
     },
     {
-      "image": "/events/event-1.webp",
-      "time": "5:00 PM",
-      "date": "28 OCT",
-      "title": "AI & Machine Learning Seminar",
-      "description": "Introduction to AI concepts",
-      "location": "Online",
-      "eventType": "Seminar",
+      "image": "/events/lingoquest.png",
+      "time": "10:30 AM",
+      "date": "12 SEP",
+      "title": "LingoQuest 2025",
+      "description": "Where logic meets creativity!",
+      "location": "Mini Audi",
+      "eventType": "Challenge",
       "socialLinks": {
-        "instagram": "https://instagram.com",
-        "github": "https://github.com",
-        "linkedin": "https://linkedin.com",
-        "discord": "https://discord.com"
+        "instagram": "https://instagram.com/gdgnsut",
+        "github": "https://github.com/GDSC-NSUT",
+        "linkedin": "https://www.linkedin.com/company/gdgnsut/",
+        "discord": "https://discord.gg/WtqbaUzgR"
       }
     },
     {
-      "image": "/events/event-1.webp",
+      "image": "/events/zero-day.png",
+      "time": "1:30 PM",
+      "date": "12 SEP",
+      "title": "Zero Day Apocalypse",
+      "description": "Step into the battlefield where humans vs AI gets real.",
+      "location": "APJ 11",
+      "eventType": "Challenge",
+      "socialLinks": {
+        "instagram": "https://instagram.com/gdgnsut",
+        "github": "https://github.com/GDSC-NSUT",
+        "linkedin": "https://www.linkedin.com/company/gdgnsut/",
+        "discord": "https://discord.gg/WtqbaUzgR"
+      }
+    },
+    {
+      "image": "/events/devxpo.png",
       "time": "10:00 AM",
       "date": "30 OCT",
-      "title": "Code Sprint Hackathon",
-      "description": "24-hour coding challenge",
-      "location": "Main Auditorium",
+      "title": "DevXpo",
+      "description": "Where Humans & AI collide and innovation takes center stage!",
+      "location": "Smart Block Parking",
       "eventType": "Hackathon",
       "socialLinks": {
-        "instagram": "https://instagram.com",
-        "github": "https://github.com",
-        "linkedin": "https://linkedin.com",
-        "discord": "https://discord.com"
+        "instagram": "https://instagram.com/gdgnsut",
+        "github": "https://github.com/GDSC-NSUT",
+        "linkedin": "https://www.linkedin.com/company/gdgnsut/",
+        "discord": "https://discord.gg/WtqbaUzgR"
       }
     },
     {
-      "image": "/events/event-1.webp",
-      "time": "4:00 PM",
-      "date": "02 NOV",
-      "title": "GDG Community Meetup",
-      "description": "Connect with fellow developers",
-      "location": "Conference Hall",
-      "eventType": "Meetup",
+      "image": "/events/flowFlux.png",
+      "time": "11:00 AM",
+      "date": "12 SEP",
+      "title": "Flow In Flux",
+      "description": "Where design meets AI, ethics, and innovation!",
+      "location": "APJ 11",
+      "eventType": "Challenge",
       "socialLinks": {
-        "instagram": "https://instagram.com",
-        "github": "https://github.com",
-        "linkedin": "https://linkedin.com",
-        "discord": "https://discord.com"
+        "instagram": "https://instagram.com/gdgnsut",
+        "github": "https://github.com/GDSC-NSUT",
+        "linkedin": "https://www.linkedin.com/company/gdgnsut/",
+        "discord": "https://discord.gg/WtqbaUzgR"
+      }
+    },
+    {
+      "image": "/events/speaker-session-shunya.png",
+      "time": "04:00 PM",
+      "date": "12 SEP",
+      "title": "Speaker Session",
+      "description": "",
+      "location": "APJ 11",
+      "eventType": "Session",
+      "socialLinks": {
+        "instagram": "https://instagram.com/gdgnsut",
+        "github": "https://github.com/GDSC-NSUT",
+        "linkedin": "https://www.linkedin.com/company/gdgnsut/",
+        "discord": "https://discord.gg/WtqbaUzgR"
       }
     }
   ]
 }
-
