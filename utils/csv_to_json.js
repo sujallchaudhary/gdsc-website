@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const csvFilePath = path.join(__dirname, 'Data Collection For GDG Website (Responses) - Form Responses 1.csv');
+const csvFilePath = path.join(__dirname, 'final_gdsc.csv');
 const jsonOutputPath = path.join(__dirname, 'data', 'members2.json');
 
 // CSV Parsing Logic Helper

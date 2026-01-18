@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const https = require('https');
 
-const csvFilePath = path.join(__dirname, 'Data Collection For GDG Website (Responses) - Form Responses 1.csv');
+const csvFilePath = path.join(__dirname, 'final_gdsc.csv');
 const publicTeamsDir = path.join(__dirname, 'public', 'teams');
 const csvOutputPath = csvFilePath; // Overwrite the same file
 
@@ -21,12 +21,12 @@ async function downloadImage(url, destPath) {
     } else {
         // Try other drive formats or just use the url if direct
         if (url.includes('drive.google.com')) {
-           // potentially /d/FILEID/view
-           const parts = url.split('/');
-           const dIndex = parts.indexOf('d');
-           if (dIndex !== -1 && parts.length > dIndex + 1) {
-               fileId = parts[dIndex + 1];
-           }
+            // potentially /d/FILEID/view
+            const parts = url.split('/');
+            const dIndex = parts.indexOf('d');
+            if (dIndex !== -1 && parts.length > dIndex + 1) {
+                fileId = parts[dIndex + 1];
+            }
         }
     }
 
@@ -40,30 +40,30 @@ async function downloadImage(url, destPath) {
         https.get(downloadUrl, (response) => {
             // Handle redirects (Google Drive often redirects)
             if (response.statusCode === 302 || response.statusCode === 303) {
-                 https.get(response.headers.location, (redirectResponse) => {
-                     if (redirectResponse.statusCode !== 200) {
-                         reject(new Error(`Failed to download: ${redirectResponse.statusCode}`));
-                         return;
-                     }
-                     redirectResponse.pipe(file);
-                     file.on('finish', () => {
-                         file.close(resolve);
-                     });
-                 }).on('error', (err) => {
-                    fs.unlink(destPath, () => {});
+                https.get(response.headers.location, (redirectResponse) => {
+                    if (redirectResponse.statusCode !== 200) {
+                        reject(new Error(`Failed to download: ${redirectResponse.statusCode}`));
+                        return;
+                    }
+                    redirectResponse.pipe(file);
+                    file.on('finish', () => {
+                        file.close(resolve);
+                    });
+                }).on('error', (err) => {
+                    fs.unlink(destPath, () => { });
                     reject(err);
-                 });
+                });
             } else if (response.statusCode === 200) {
                 response.pipe(file);
                 file.on('finish', () => {
                     file.close(resolve);
                 });
             } else {
-                fs.unlink(destPath, () => {}); // Delete the file async. (But we don't check for this)
+                fs.unlink(destPath, () => { }); // Delete the file async. (But we don't check for this)
                 reject(new Error(`Failed to download: ${response.statusCode}`));
             }
         }).on('error', (err) => {
-            fs.unlink(destPath, () => {});
+            fs.unlink(destPath, () => { });
             reject(err);
         });
     });
@@ -96,15 +96,15 @@ function parseCSV(text) {
             currentRow.push(currentField);
             currentField = '';
         } else if ((char === '\r' || char === '\n') && !insideQuotes) {
-             // Handle CRLF
-             if (char === '\r' && nextChar === '\n') {
-                 i++;
-             }
-             // End of row
-             currentRow.push(currentField);
-             rows.push(currentRow);
-             currentRow = [];
-             currentField = '';
+            // Handle CRLF
+            if (char === '\r' && nextChar === '\n') {
+                i++;
+            }
+            // End of row
+            currentRow.push(currentField);
+            rows.push(currentRow);
+            currentRow = [];
+            currentField = '';
         } else {
             currentField += char;
         }
@@ -178,7 +178,7 @@ async function main() {
         try {
             await downloadImage(pictureUrl, localPath);
             console.log(`Saved to ${localPath}`);
-            
+
             // Update the row
             row[pictureIndex] = relativePath;
         } catch (err) {

@@ -627,7 +627,7 @@
     "linkedin": "https://www.linkedin.com/in/therealdeepesh",
     "github": "",
     "bio": "Currently asking chatgpt on how to center a div😅",
-    "image": "teams/Deepesh.jpg"
+    "image": "teams/Deepesh.png"
   },
   {
     "timestamp": "1/11/2026 18:10:56",
@@ -1243,7 +1243,7 @@
     "linkedin": "https://www.linkedin.com/in/chelsi-jareda",
     "github": "",
     "bio": "I am a 3rd year CSAI student & Production Head in GDG who’s turning chaos into content and ideas into journal entries, minus the drama.",
-    "image": "teams/Chelsi_Jareda.jpg"
+    "image": "teams/Chelsi_Jareda.png"
   },
   {
     "timestamp": "1/12/2026 1:01:04",
@@ -1356,5 +1356,61 @@
     "github": "https://github.com/MaitreyeeeAggarwal",
     "bio": "Ever wonder what happens when curiosity meets a keyboard? I’m a curious builder exploring web development, design systems, and AI-driven ideas. From hackathons to collaborations, I want turn wild concepts into smooth, human-friendly digital experiences. Powered by creativity, caffeine, and a love for building things that matter.",
     "image": "teams/Maitreyee_Aggarwal.jpg"
+  },
+  {
+    "timestamp": "1/18/2026 17:04:29",
+    "name": "Aryan Goel",
+    "department": "Operations",
+    "position": "Core",
+    "corePosition": "President",
+    "rollNumber": "2023UEC2525",
+    "nsutEmail": "aryan.goel.ug23@nsut.ac.in",
+    "personalEmail": "goel.aryan26@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/aryangoel26",
+    "github": "",
+    "bio": "I am a pre-final year student at Netaji Subhas University of Technology with a strong focus on strategy consulting, GTM execution, and business problem-solving. I thrive at the intersection of structured thinking, data-backed insights, and fast, scrappy execution",
+    "image": "teams/Aryan_Goel.jpg"
+  },
+  {
+    "timestamp": "1/18/2026 17:22:21",
+    "name": "Tarun singh",
+    "department": "Operations",
+    "position": "Core",
+    "corePosition": "Vice president",
+    "rollNumber": "2023UCS1587",
+    "nsutEmail": "tarun.singh.ug23@nsut.ac.in",
+    "personalEmail": "singhtarun9060@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/tarunsingh04?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+    "github": "",
+    "bio": "Daldena kuch bhi bhai",
+    "image": "teams/Tarun_singh.jpg"
+  },
+  {
+    "timestamp": "1/18/2026 18:02:59",
+    "name": "Vipul Kaushik",
+    "department": "Operations",
+    "position": "Core",
+    "corePosition": "Vice President",
+    "rollNumber": "2023UCA1935",
+    "nsutEmail": "vipul.kumar.ug23@nsut.ac.in",
+    "personalEmail": "vipulkaushik951@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/vipulkumarkaushik?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    "github": "",
+    "bio": "I’m Vipul, Vice President of GDG, passionate about building a friendly developer community where people learn, share, and grow together. I enjoy leading tech initiatives, exploring new technologies, and helping students gain confidence by building real-world projects",
+    "image": "teams/Vipul_Kaushik.jpg"
+  },
+  {
+    "timestamp": "1/18/2026 18:12:01",
+    "name": "Meetaxar Duhan",
+    "department": "DSA",
+    "position": "Core",
+    "corePosition": "DSA Head",
+    "rollNumber": "2023UCS1558",
+    "nsutEmail": "Meetaxar.duhan.ug23@nsut.ac.in",
+    "personalEmail": "Meetaxarduhan@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/meetaxarduhan/",
+    "github": "",
+    "bio": "I love making mistakes and learning. Always trying to bring positive energy to my peers 😊",
+    "image": "teams/Meetaxar_Duhan.png"
   }
 ]

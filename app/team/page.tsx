@@ -5,7 +5,6 @@ import Card from '@/components/Card';
 import SectionLabel from '@/components/SectionLabel';
 import DepartmentHeader from '@/components/DepartmentHeader';
 import { LongTailArrowIcon } from '@/components/icons';
-import { ASSET_PATHS } from '@/libs/utils';
 import membersData from '@/data/members.json';
 
 // Define the Member interface matching the JSON structure
@@ -29,8 +28,6 @@ const MEMBERS = membersData as Member[];
 export default function TeamPage() {
   // Use useMemo to process data only once
   const { presidents, vicePresidents, generalSecretaries, departments } = useMemo(() => {
-    // 1. Core Positions Filtering
-    // Filter by position "Core" or corePosition field, but user specifically asked for Presi, VP, GenSec at top.
 
     // Normalizing strings for comparison
     const normalize = (s: string) => s.trim().toLowerCase();
@@ -38,11 +35,6 @@ export default function TeamPage() {
     const presidents = MEMBERS.filter(m => m.corePosition && normalize(m.corePosition) === 'president');
     const vicePresidents = MEMBERS.filter(m => m.corePosition && normalize(m.corePosition) === 'vice president');
     const generalSecretaries = MEMBERS.filter(m => m.corePosition && normalize(m.corePosition) === 'general secretary');
-
-    // IDs of people already shown in top sections to exclude them from departments if needed
-    // Assuming they should NOT appear in departments if they are listed above? 
-    // Usually Presi/VP are not in a specific "dept" list or are separate.
-    // Let's collect their rollNumbers or unique IDs to exclude.
     const featuredRolls = new Set([
       ...presidents, ...vicePresidents, ...generalSecretaries
     ].map(m => m.rollNumber));
@@ -61,11 +53,6 @@ export default function TeamPage() {
       deptMap[dept].push(member);
     });
 
-    // 3. Sorting within Departments
-    // Order: Department Lead (Core) -> Mentor -> Member
-    // Note: User said "Department Lead (Core)". In the CSV, we have "Position" and "Core Position".
-    // "Core" position usually implies Department Lead or similar if in a department.
-    // Explicit Sort Order weights:
     const getWeight = (member: Member) => {
       const pos = normalize(member.position);
       const corePos = normalize(member.corePosition);
@@ -87,12 +74,6 @@ export default function TeamPage() {
       });
     });
 
-    // Departments to display in specific order if desired, or just all keys
-    // Common order: Technical depts, then others? Or just alphabetical?
-    // User didn't specify department order. Let's list known ones first or just alphabetical.
-    // Known: Development, DSA, ML, Production, Operations
-    // We can just iterate Object.keys(deptMap) but order is not guaranteed. 
-    // Let's sort keys to be consistent.
     const sortedDeptKeys = Object.keys(deptMap).sort();
 
     return {
@@ -125,7 +106,7 @@ export default function TeamPage() {
         {presidents.length > 0 && (
           <section className="w-full lg:mb-16 flex items-center">
             <SectionLabel title="PRESIDENT" color="blue" />
-            <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 justify-items-center">
+            <div className="w-full grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-8 justify-items-center">
               {presidents.map((member, idx) => (
                 <Card
                   key={idx}
@@ -143,7 +124,7 @@ export default function TeamPage() {
         {vicePresidents.length > 0 && (
           <section className="w-full lg:mb-16 flex items-center">
             <SectionLabel title="VICE PRESIDENT" color="yellow" />
-            <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 justify-items-center">
+            <div className="w-full grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-8 justify-items-center">
               {vicePresidents.map((member, idx) => (
                 <Card
                   key={idx}
@@ -161,7 +142,7 @@ export default function TeamPage() {
         {generalSecretaries.length > 0 && (
           <section className="w-full mb-16 flex items-center">
             <SectionLabel title="GENERAL SECRETARY" color="red" />
-            <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 justify-items-center">
+            <div className="w-full grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-8 justify-items-center">
               {generalSecretaries.map((member, idx) => (
                 <Card
                   key={idx}
@@ -193,7 +174,7 @@ export default function TeamPage() {
                - On Medium: 2 cols
                - Centered
             */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mx-6 lg:mx-12 gap-8 lg:gap-12 mt-16 justify-items-center relative">
+            <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 mx-4 lg:mx-12 gap-4 lg:gap-12 mt-16 justify-items-center relative">
               {dept.members.map((member, mIdx) => (
                 <TeamCard
                   key={mIdx}
